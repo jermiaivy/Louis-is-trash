@@ -4,8 +4,9 @@
      <body>
      <h1 id="daThruth">Louis is <span id="adjective">Awseome</span> </h1>
       <input type="button" value="click me" onclick= "alert('sike!Louis is trash')"/>
-          <input type="button" value="activate" onclick="chillin()"/>
-         
+      <input type="button" value="activate" onclick="chillin()"/>
+      <input type="button" value="Lakers" onclick="changeSentence()"/>
+      <input type="button" value="Louis is ..." onclick="aPrompt()"/>
     </body>
       <script>
           function chillin(){
@@ -13,12 +14,16 @@
           }
           
          
-         function changesentence(){
-            document.getElementById("daThruth").innerHtml-"lakers are awsome"
+         function changeSentence(){
+            document.getElementById("daThruth").innerHtml="lakers are awsome";
          }
-              function changeadjective(){
-                  document.getElementById("adjective").innerHTML="trash";
+         function changeAdjective(){
+                  document.getElementById("adjective").innerHTML = "trash";
               }
+         function aPrompt(){
+             var newWord = prompt("Give me a new word to describe Louis:");
+         }   
+        
       </script>
       </html>
 
